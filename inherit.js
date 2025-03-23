@@ -29,7 +29,10 @@ class Child extends Parent
     }
 }
 
-var obj =  new Child('Anas', 18, 'geography');
-console.log(obj);
+var obj1 =  new Child('Anas', 18, 'geography');
+console.log(obj1);
 
-console.log(obj.cgetDetails());
+console.log(obj1.cgetDetails());
+
+var obj2 = new Child('Hamza', 70, 'History');
+console.log(obj2);
