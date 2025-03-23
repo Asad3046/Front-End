@@ -36,3 +36,5 @@ console.log(obj1.cgetDetails());
 
 var obj2 = new Child('Hamza', 70, 'History');
 console.log(obj2);
+
+console.log (obj2.cgetDetails());
