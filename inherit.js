@@ -3,6 +3,7 @@ class Parent
 {
     name;
     age;
+    #accountNumber; // to make a variable final we use '#' symbol
     constructor(name, age)
     {
         this.name = name;
@@ -10,7 +11,7 @@ class Parent
     }
     pgetDetails()
     {
-        return this.name;
+        return `Name:${this.name}, Age:${this.age}`;
     }
 }
 
@@ -25,16 +26,14 @@ class Child extends Parent
     }
     cgetDetails()
     {
-        return `Name:${this.name}, age:${this.age}, subject:${this.subject}`;
+        return `${super.pgetDetails()}, subject:${this.subject}`;
     }
 }
 
-var obj1 =  new Child('Anas', 18, 'geography');
+var obj1 =  new Child('Anas', 18, 'Geography');
 console.log(obj1);
-
 console.log(obj1.cgetDetails());
 
 var obj2 = new Child('Hamza', 70, 'History');
 console.log(obj2);
-
 console.log (obj2.cgetDetails());
